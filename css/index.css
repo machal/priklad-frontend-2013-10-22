@@ -152,12 +152,22 @@ table th {
 }
 .polaroid {
   background-color: rgba(256, 256, 256, 0.7);
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -o-transition: 200ms;
+  -ms-transition: 200ms;
+  transition: 200ms;
 }
 .polaroid:hover,
 .polaroid:focus,
 .polaroid:active {
   background-color: #fcf883;
   background-color: #ffffff;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .polaroid:target {
   background: yellow;

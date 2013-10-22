@@ -181,24 +181,32 @@ table th {
 .polaroid .polaroid:active .head {
   color: black;
 }
-.container {
-  max-width: 980px;
-  margin: 0 auto;
-  zoom: 1;
+@media (min-width: 700px) {
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    zoom: 1;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+  .content {
+    width: 66%;
+    float: left;
+  }
+  .side {
+    width: 33%;
+    float: right;
+  }
 }
-.container:before,
-.container:after {
-  content: "";
-  display: table;
-}
-.container:after {
-  clear: both;
-}
-.content {
-  width: 66%;
-  float: left;
-}
-.side {
-  width: 33%;
-  float: right;
+@media (min-width: 700px) and (min-width: 700px) and (max-width: 1024px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
